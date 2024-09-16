@@ -1,7 +1,8 @@
 function addElement(){
     let a = document.getElementById("add");
     let b = document.createElement("div");
-    b.innerHTML = a.value;
+    ele = a.value;
     let c = document.getElementById("list");
+    b.innerHTML = ele + "<button>Delete</button>";
     c.appendChild(b);
 }
